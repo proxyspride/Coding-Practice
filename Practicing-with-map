@@ -1,0 +1,30 @@
+const nameList = [];
+nameList.push('Sam');
+nameList.push('John');
+nameList.push('Jim');
+nameList.push('Bryan');
+nameList.push('Adam');
+nameList.push('Tim');
+nameList.push('Ben');
+nameList.push('Ryu');
+nameList.push('Naruto');
+nameList.push('Dwight');
+
+
+let numList = [];
+
+for (let i = 1; i <= 10; i++) {
+  numList.push(Math.floor(Math.random() * 100) + 1);
+};
+
+
+let namesMapped = nameList.map(function(name) {
+  return name.length >= 5;
+})
+
+console.log(namesMapped)
+
+
+let numsMapped = numList.map(num => num > 50)
+
+console.log(numsMapped)
