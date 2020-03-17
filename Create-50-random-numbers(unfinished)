@@ -1,0 +1,24 @@
+let randomNums = [];
+
+let generateRandomNumber = Math.floor(Math.random(1) * 100);
+
+const rNG = (arr) => {
+  let counter = 1;
+  while (counter <= 50) {
+    arr.push(Math.floor(Math.random(1) * 100));
+    counter++;
+    } console.log(arr);
+  }
+
+
+let random1to100 = rNG(randomNums);
+
+
+const filterFunction = func => {
+  let tempList = func;
+  let filteredNums = tempList.filter(number => {
+    return !includes(number, number + 1)
+  })
+}
+
+console.log(filterFunction(random1to100))
