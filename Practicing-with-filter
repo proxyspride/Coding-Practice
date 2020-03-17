@@ -1,0 +1,18 @@
+const numList = [1, 2, 3, 4];
+const nameList = ['Toni', 'Ali', 'Jax'];
+
+
+for (let i = 4; i < 20; i++) {
+  numList.push(i);
+};
+
+const numFiltEven = numList.filter(num => num % 2 === 0);
+
+const numFiltOdd = numList.filter(num => num % 2 !== 0);
+
+const nameFilt = nameList.filter(name => name.length <= 3);
+
+
+console.log(numFiltEven);
+console.log(numFiltOdd);
+console.log(nameFilt);
