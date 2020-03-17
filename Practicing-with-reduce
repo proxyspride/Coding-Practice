@@ -1,0 +1,16 @@
+let myArr = [];
+
+const makeArr = arr => {
+  for (let i = 0; i < 10; i++) {
+    arr.push(Math.floor(Math.random(1) * 20))
+  } return arr;
+};
+
+makeArr(myArr);
+console.log(myArr);
+
+const reducedArr = myArr.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 20);
+
+console.log(reducedArr);
